@@ -2,7 +2,13 @@
 	_content.css
 */
 
-
+.container-shadow{
+	box-shadow: 0 0 30px rgba(black, 0.5);
+}
+.content-wrapper{
+	padding-bottom: 45px;
+	position: relative;
+}
 .bg-shadow{
 	pointer-events: none;
 }
@@ -150,6 +156,9 @@
 		word-wrap: break-word;
 	}
 }
+
+
+
 
 
 .col-cut{

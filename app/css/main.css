@@ -7582,7 +7582,6 @@ hr {
 
 .main-content {
   background-color: white;
-  overflow: hidden;
   position: relative; }
   @media (max-width: 991px) {
     .main-content {
@@ -8218,6 +8217,14 @@ textarea.form-control {
 /*
 	_content.css
 */
+.container-shadow {
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+
+.content-wrapper {
+  padding-bottom: 45px;
+  position: relative; }
+
 .bg-shadow {
   pointer-events: none; }
 
