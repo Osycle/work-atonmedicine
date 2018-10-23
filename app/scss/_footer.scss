@@ -14,9 +14,10 @@
 	//min-height: 150px;
 	line-height: 170%;
 	background-repeat: no-repeat;
-	background-position-y: center;
+	background-position: bottom;
 	background-size: cover;
-	background-color: $bg-color-gray;
+	background-color: $color-1;
+	background-image: url('../img/bg/bg-footer.jpg');
 }
 .footer-menu{
 	ul{
@@ -35,9 +36,8 @@
 	}
 }
 .footer-content{
-
 	.align-i-center{
-		min-height: 200px;
+		min-height: 90px;
 	}
 }
 .socicons{
@@ -47,33 +47,33 @@
 	}
 }
 .copy-content{
-	background-color: $color-1;
+	background-color: $bg-color-gray;
 	color: white;
 }
 .dev{
 	font-size: 0.9em;
 }
 
-@keyframes footerlogo {
-  from {
-  	filter: drop-shadow(-1px -5px 0px rgba($color-1, 0.3) ) drop-shadow(-1px 5px 0px rgba($color-2, 0.1) );
-  }
-  50% {
-   filter: drop-shadow(-5px 5px 0px rgba($color-1, 0.1) ) drop-shadow(8px -5px 0px rgba($color-2, 0.3) );
-  }
-  to {
-    filter: drop-shadow(-1px -5px 0px rgba($color-1, 0.2) ) drop-shadow(-1px 5px 0px rgba($color-2, 0.2) );
-  }
+
+
+.footer-map{
+	.img{
+		width: 220px;
+		height: 120px;
+		background-size: cover;
+		background-position: center;
+	}
 }
-.footer-logo{
-	img{
-		transition: all 0.3s ease;
-		//filter: drop-shadow(0px 0px 0px rgba($color-1, 0.2) ) drop-shadow(0px 0px 0px rgba($color-2, 0.2) );
-		filter: drop-shadow(0px 0px 3px rgba(black, 0.0) );
-		&:hover{
-		 //filter: drop-shadow(0px -15px 0px rgba($color-1, 0.4) ) drop-shadow(0px 15px 0px rgba($color-2, 0.4) );
-		 filter: drop-shadow(0px 0px 3px rgba(black, 0.8) );
-			//animation: footerlogo 3.5s linear infinite;
-		}
+
+.fancy-map{
+	#map-canvas{
+		width: 70%;
+	}
+	.fancybox-slide{
+		transform: none !important;
+	}
+	@media (max-width: 991px) {
+		width: 90%;
+		height: 320px;
 	}
 }
