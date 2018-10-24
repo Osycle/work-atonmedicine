@@ -3,16 +3,18 @@
 */
 
 .container-shadow{
-	box-shadow: 0 0 30px rgba(black, 0.5);
+	box-shadow: 0 5px 50px -10px black;
+
 }
 .content-wrapper{
-	padding-bottom: 45px;
+	padding-bottom: 60px;
 	position: relative;
 }
 .bg-shadow{
 	pointer-events: none;
 }
 .offsetpad{
+	@extend .clearfix;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	@media (min-width:992px){
@@ -63,21 +65,22 @@
 			}
 		}
 	}
-	h1, p, .btn-def, img{
+	h1, p, .btn-def, .btn-opacity, img{
 		opacity: 0;
 		transition: 1s ease;
 	}
 	h1{
 		transform: translateY(-20px);
+		font-weight: 600;
 	}
 	p, img{
 		transform: translateY(20px);	
 	}
-	.btn-def{
+	.btn-def, .btn-opacity{
 		transform: scale(1.3);
 	}
 	.is-selected{
-		h1, p, .btn-def, img{
+		h1, p, .btn-def, .btn-opacity, img{
 			transform: scale(1);
 			//text-shadow: 0px 0px 0px white;
 			opacity: 1;
@@ -208,5 +211,97 @@
 		padding: 10px 15px;
 		bottom: 0;
 		background-color: rgba(black, 0.5);
+	}
+}
+
+
+//contacts-block
+.contacts-block-items{
+	figure{
+		@media (min-width: 992px){
+			.desc-content{
+				padding-right: 15px;
+			}
+		}
+	}
+}
+.contacts-map{
+	#map-canvas{
+		height: 300px;
+	}
+}
+
+//productions
+.productions{
+}
+.productions-content{
+	@media (min-width: 992px) {
+		margin-left: 4%;
+	}
+}
+.productions-items{
+	figure{
+		.wrapper{
+			border: 1px solid $color-1;
+			padding-bottom: 15px;
+		}
+		.img{
+			background-position: bottom;
+			height: 140px;
+		}
+		.desc-content{
+			padding: 0 15px;
+			font-size: 0.9em;
+		}
+	}
+}
+
+.left-bar{
+	background-image: url('../img/bg/bg-origin.jpg');
+	background-position: left;
+	color: white;
+	padding: 20px 30px 30px 30px;
+	margin-bottom: 45px;
+	.fa{
+		vertical-align: bottom;
+	}
+	li{
+		padding: 10px 10px;
+	}
+	h4{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+
+//productions-article
+.productions-article{
+	.article-img{
+		.img{
+			height: 200px;
+			background-size: contain;
+		}
+		@media (min-width: 991px) {
+			padding: 10px 0;
+		}
+	}
+}
+
+
+.staff-items{
+	@include boxes-items( 80, 3 );
+	figure{
+		.img{
+			background-size: cover;
+			background-position: center;
+			height: 220px;
+		}
+		@media (min-width: 992px) {
+			text-align: left;
+		}
+	}
+	@media (max-width: 991px) {
+		@include boxes-items( 80, 1 );
 	}
 }

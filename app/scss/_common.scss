@@ -911,13 +911,12 @@ h1{
 	line-height: 125%;
 	font-size: em(28, 15);
 	margin-bottom: 15px;
-	font-weight: 600;
+	font-weight: 500;
 	@media (max-width: 430px) {
 		font-size: em(33/1.2, 15);
 	}
 }
 h2{
-	@extend .h-style-1;
 	font-size: em(22, 15);
 	margin-bottom: 15px;
 	font-weight: 500;
@@ -933,13 +932,11 @@ h3{
 	}
 }
 h4{
-	text-transform: uppercase;
 	font-size: em(16, 15);
 }
 h5{	
 	line-height: 150%;
 	font-weight: 600;
-	text-transform: uppercase;
 	font-size: em(14, 15);
 }
 
@@ -1015,7 +1012,10 @@ hr{
 	*:not(figure):not(div){
 		//letter-spacing: 0.5px;
 	}
-	.line-height-def{
+}
+.line-height-def{
+	line-height: 100%;
+	p{
 		line-height: 100%;
 	}
 }
@@ -1041,7 +1041,7 @@ hr{
 }
 
 .pie-form-control{
-	border: 0px solid $color-gray-2;
+	border: 1px solid $color-gray-2;
 	//border-bottom-color: white;
 	background-color: rgba(white, 0.05);
 	//border-radius: 30px;

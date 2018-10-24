@@ -281,6 +281,9 @@ html{
 }
 
 @media ( max-width:991px ){
+	.flex-column-sm{
+		flex-direction: column;	
+	}
 	.flexboxes-2{
 		figure, .flexboxes-item{
 			flex-basis: (100/1)+%;
