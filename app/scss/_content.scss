@@ -22,6 +22,11 @@
 		padding-bottom: 60px;
 	}
 }
+.page-bnr{
+	.img{
+		height: 220px;
+	}
+}
 //--bnr-slider
 .bnr-slider{
 	position: relative;
@@ -179,6 +184,11 @@
 .short-links-items{
 	figure{
 		position: relative;
+		overflow: hidden;
+		.img{
+			filter: blur(0px);
+			transform: scale(1);
+		}
 		&:hover{
 			.img{
 				transform: scale(1.1);
@@ -198,7 +208,7 @@
 		background-position: center;
 		transform: scale(1);
 		filter: blur(0);
-		transition: 0.7s ease;
+		transition: 0.7s steps(30);
 		background-size: cover;
 		@media (max-width: 991px) {
 			height: 200px;
@@ -211,6 +221,12 @@
 		padding: 10px 15px;
 		bottom: 0;
 		background-color: rgba(black, 0.5);
+		&.bg-color-1{
+			background-color: rgba($color-1, 0.5);
+		}
+		@media (max-width:991px) {
+			max-height: 70%;
+		}
 	}
 }
 
@@ -281,6 +297,7 @@
 		.img{
 			height: 200px;
 			background-size: contain;
+			background-position: center;
 		}
 		@media (min-width: 991px) {
 			padding: 10px 0;
@@ -288,20 +305,219 @@
 	}
 }
 
-
+//about
+.about{
+	.offsetpad{
+		padding-top: 0;
+	}
+}
 .staff-items{
 	@include boxes-items( 80, 3 );
 	figure{
 		.img{
-			background-size: cover;
+			background-size: contain;
 			background-position: center;
 			height: 220px;
 		}
 		@media (min-width: 992px) {
 			text-align: left;
+			.img{
+				background-size: cover;
+			}
 		}
 	}
 	@media (max-width: 991px) {
 		@include boxes-items( 80, 1 );
+	}
+}
+.manufacture{
+	.short-links-items{
+		.desc-content{
+			background-color: rgba($color-1, 0.5);
+		}
+	}
+}
+
+//literature
+.literature-last-items{
+	figure{
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+		.desc-content{
+			color: white;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 30px 30px;
+			text-shadow: 0 0 5px rgba(black, 0.4);
+		}
+		h3, p{
+			transition: all 0.8s ease;
+			&:before{
+				transition: all 0.8s ease;
+			}
+		}
+		h3{
+			transform: translate(10px, -4px);
+			padding-bottom: 10px;
+			&:before{
+				@extend .claf;
+				height: 1px;
+				width: 20%;
+				background-color: white;
+				right: 0;
+				bottom: 0;
+				top: inherit;
+			}
+		}
+		p{
+			transform: translate(10px, 4px);
+		}
+		.img{
+			transition: all 0.8s ease;
+			background-size: cover;
+		}
+		.bg-shadow{
+			transition: all 0.3s ease-in-out;
+		}
+		&:hover{
+			.bg-shadow{
+				opacity: 0.5;
+			}
+			.img{
+				transform: scale(1.05);
+			}
+			.desc-content{
+				h3, p{
+					transform: scale(1);
+					&:before{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	figure:nth-child(3n+1){
+		width: 60%;
+		float: left;
+		.img{
+			height: 420px;
+		}
+		.desc-content{
+			text-align: right;
+		}
+		h3{
+			&:before{
+				left: inherit;
+			}
+		}
+	}
+	figure:nth-child(3n+2), figure:nth-child(3n+3){
+		width: 40%;
+		float: right;
+		.desc-content{
+			text-align: left;
+		}
+		.img{
+			height: 210px;
+		}
+	}
+	@media (max-width: 991px) {
+		figure:not(.empty){
+			width: 100%;
+			height: 210px;
+			.desc-content{
+				text-align: center;
+				float: none;
+			}
+			h3, p{
+				transform: scale(1);
+				&:before{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.literature-items{
+	figure{
+		.img{
+			height: 185px;
+		}
+	}
+}
+
+
+//literature-article
+.literature-popular{
+	.cap-content{
+		h2{
+			margin: 0;
+			padding: 10px 0;
+			text-align: center;
+			color: black;
+			background-color: $color-1;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+//vacancies
+.vacancies-accordion{
+	.panel-default{
+		border-color: $color-1;
+	}
+	.panel-heading{
+		background-color: transparent;
+		padding: 0;
+		h4{
+			text-transform: none;
+		}
+		.fa{
+			position: absolute;
+			right: 15px;
+			transform: rotate(180deg);
+			top: 14px;
+		}
+		a{
+			display: block;
+			padding: 10px 15px;
+			transition: all 0.3s ease;
+			border-radius: 5px;
+			border: 1px solid $color-1;
+			&:not(.collapsed){
+				color: white;
+				background-color: $color-1;
+				.fa{
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
+.form-item{
+	border: 1px solid $color-1;
+	width: 100%;
+	@include placeholder( rgba( black, 0.5 ) )
+	border-radius: 5px;
+	padding: 8px 15px;
+
+}
+
+.vacancies-form{
+	textarea{
+		resize: none;
+		height: 92px;
+	}
+	input{
+		height: 37px;
 	}
 }
