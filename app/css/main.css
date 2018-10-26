@@ -7401,7 +7401,8 @@ body {
   background-repeat: no-repeat;
   -webkit-background-size: auto auto;
   background-size: auto;
-  background-position: center 1100px; }
+  background-position: center 0;
+  background-attachment: fixed; }
 
 p, li, ul, menu {
   margin: 0;
@@ -7767,7 +7768,6 @@ label {
   background-size: cover; }
 
 .header-top {
-  background-color: white;
   color: black;
   width: 100%; }
   .header-top .btn-def {
@@ -8473,6 +8473,9 @@ textarea.form-control {
   .left-bar h4 {
     margin-top: 10px;
     margin-bottom: 10px; }
+  @media (min-width: 992px) {
+    .left-bar {
+      margin-top: 56px; } }
 
 .productions-article .article-img .img {
   height: 200px;
@@ -8620,7 +8623,7 @@ textarea.form-control {
   margin: 0;
   padding: 10px 0;
   text-align: center;
-  color: black;
+  color: white;
   background-color: #5697e3; }
 
 .vacancies-accordion .panel-default {

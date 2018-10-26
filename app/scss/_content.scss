@@ -288,6 +288,9 @@
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
+	@media (min-width: 992px) {
+		margin-top: 56px;
+	}
 }
 
 
@@ -457,7 +460,7 @@
 			margin: 0;
 			padding: 10px 0;
 			text-align: center;
-			color: black;
+			color: white;
 			background-color: $color-1;
 		}
 	}
