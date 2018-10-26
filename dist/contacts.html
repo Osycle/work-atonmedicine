@@ -25,26 +25,6 @@
 			<p>Ваш браузер не поддерживает скрипты!
 				<br/> Пожалуйста подключите в настройках браузера Javascript</p>
 		</noscript>
-		<!-- Скрытые формы -->
-		<div class="hide">
-			<div id="form-productions">
-				<form action="" method="get" accept-charset="utf-8">
-					<div class="p-h-15">
-						<div class="input-content m-v-20">
-							<label class="placeholder">Введите имя</label>
-							<input class="form-item pie-form-control" type="text" name="" placeholder="ФИО">
-						</div>
-						<div class="input-content m-v-20">
-							<label class="placeholder">Введите телефон</label>
-							<input class="form-item pie-form-control" type="text" name="" placeholder="Ваш телефон">
-						</div>
-						<div class="btn-content text-right">
-							<span class="btn-def"><a href="" title="">Отправить</a></span>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
 		<!-- HEADER -->
 		<div class="header-hidden"></div>
 		<header id="header" class="header-scroll hidden-sm hidden-xs" data-aos="fade">
@@ -121,7 +101,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="container content-wrapper" data-aos="fade" data-aos-delay="0">
+		<div class="container content-wrapper" data-aos="fade" data-aos-delay="0" >
 			<div class="container-shadow">
 				<!-- MAIN -->
 				<main data-aos="fade" data-aos-delay="0">
@@ -145,29 +125,55 @@
 								</div>
 							</div>
 						</div><!-- ./MENU -->
-
-			      <!-- error -->
-			      <div class="error">
-			        <div class="error-content over-hidden color-black"">
-			          <div class="clearfix m-v-60 text-center">
-			            <font size="7" class="color-2">
-			              <i class="fa fa-frown-o" data-aos="flip-up" data-aos-duration="3000" data-aos-delay="300" style="font-size: 300px;"></i>
-			            </font>
-			            <p>
-			              <font size="7" class="color-1">404</font>
-			            </p>
-			            <h3>Страница не найдена</h3>
-			            <p>
-			              <strong>Вероятные причины:</strong>
-			              <br> Была допущена ошибка при наборе адреса.
-			              <br> Вы нажали на устаревшую ссылку.
-			            </p>
-			            <p>
-			              <a href="index.html"><u>Перейти на главную</u></a>
-			            </p>
-			          </div>
-			        </div>
-			      </div>
+						
+						<!-- contacts -->
+						<div class="contacts clearfix">
+							<div class="wrapper offsetpad box-md-8 m-auto">
+								<div class="entry-header">
+									<h1 class="color-1">Наши контакты</h1>
+								</div>
+								<div class="contacts-block col-md-6">
+									<div class="contacts-block-items boxes-2 figure-m-v-30">
+										<figure>
+											<div class="img-content">
+												<img src="img/icons/support.svg" alt="">
+											</div>
+											<div class="desc-content m-v-10">
+												<p>Ким Анатолий Александрович</p>
+											</div>
+										</figure>
+										<figure>
+											<div class="img-content">
+												<img src="img/icons/mail.svg" alt="">
+											</div>
+											<div class="desc-content m-v-10">
+												<p>info@aton.uz</p>
+											</div>
+										</figure>
+										<figure>
+											<div class="img-content">
+												<img src="img/icons/phone-call.svg" alt="">
+											</div>
+											<div class="desc-content m-v-10">
+												<p>+99871 262-00-86</p>
+												<p>+99871 262-00-86</p>
+											</div>
+										</figure>
+										<figure>
+											<div class="img-content">
+												<img src="img/icons/location-pin.svg" alt="">
+											</div>
+											<div class="desc-content m-v-10">
+												<p>366 Armstrong Creek</p>
+											</div>
+										</figure>
+									</div>
+								</div>
+								<div class="contacts-map">
+									<div id="map-canvas" class="map-content"></div>
+								</div>
+							</div>
+						</div>
 
 
 					</div><!-- ./MAIN-CONTENT -->
@@ -186,25 +192,7 @@
 								<p>025 Morissette</p>
 								<p>Fields Suite 536025</p>
 							</div>
-							<div class="footer-map">
-								<a data-fancybox="map" data-src="#map-canvas" href="javascript:;">
-									<div class="img" style="background-image: url('img/bg/bg-map.png');"></div>
-								</a>
-							</div>
-						<div class="linksstatus">
-							<!--LiveInternet counter-->
-							<script type="text/javascript">
-								document.write("<a href='//www.liveinternet.ru/click' " +
-								    "target=_blank><img src='//counter.yadro.ru/hit?t14.6;r" +
-								    escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
-								        ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
-								            screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
-								    ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() +
-								    "' alt='' title='LiveInternet: показано число просмотров за 24" +
-								    " часа, посетителей за 24 часа и за сегодня' " +
-								    "border='0' width='88' height='31'><\/a>")
-								</script><!-- ./LiveInternet-->
-							</div>
+
 						</div>
 						
 					</div>
@@ -224,7 +212,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- Карта переносится в модальное окно-->
 					<div class="hide">
 						<div id="map-canvas" class="map-content"></div>
 					</div>
