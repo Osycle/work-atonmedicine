@@ -189,6 +189,9 @@
 			filter: blur(0px);
 			transform: scale(1);
 		}
+		.desc-content{
+			width: 100%;
+		}
 		&:hover{
 			.img{
 				transform: scale(1.1);
@@ -509,8 +512,7 @@
 .form-item{
 	border: 1px solid $color-1;
 	width: 100%;
-	@include placeholder( rgba( black, 0.5 ) )
-	border-radius: 5px;
+	@include placeholder( rgba( black, 0.5 ) );
 	padding: 8px 15px;
 
 }
@@ -522,5 +524,14 @@
 	}
 	input{
 		height: 37px;
+	}
+}
+
+
+
+//reviews
+.reviews-items{
+	h5{
+		color: $color-gray-2;
 	}
 }

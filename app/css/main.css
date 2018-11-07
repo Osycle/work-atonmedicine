@@ -8392,6 +8392,8 @@ textarea.form-control {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); }
+  .short-links-items figure .desc-content {
+    width: 100%; }
   .short-links-items figure:hover .img {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -8661,8 +8663,6 @@ textarea.form-control {
 .form-item {
   border: 1px solid #5697e3;
   width: 100%;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
   padding: 8px 15px; }
   .form-item::-moz-placeholder {
     color: rgba(0, 0, 0, 0.5);
@@ -8678,6 +8678,9 @@ textarea.form-control {
 
 .vacancies-form input {
   height: 37px; }
+
+.reviews-items h5 {
+  color: #b2b2b2; }
 
 /* 
 		_footer.scss
