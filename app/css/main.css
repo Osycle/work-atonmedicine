@@ -8682,6 +8682,9 @@ textarea.form-control {
 .reviews-items h5 {
   color: #b2b2b2; }
 
+.reviews-form textarea.pie-form-control {
+  min-height: 78px; }
+
 /* 
 		_footer.scss
 */

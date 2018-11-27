@@ -535,3 +535,8 @@
 		color: $color-gray-2;
 	}
 }
+.reviews-form{
+	textarea.pie-form-control{
+		min-height: 78px;
+	}
+}
