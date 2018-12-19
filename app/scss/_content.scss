@@ -186,7 +186,7 @@
 		position: relative;
 		overflow: hidden;
 		.img{
-			filter: blur(0px);
+			filter: contrast(100%) brightness(100%);
 			transform: scale(1);
 		}
 		.desc-content{
@@ -194,8 +194,9 @@
 		}
 		&:hover{
 			.img{
-				transform: scale(1.1);
-				filter: blur(3px);
+				//transform: scale(1.1);
+				transform: translateY(-5px) scale(0.97);
+				filter: contrast(105%) brightness(110%);
 			}
 			.desc-content{
 				padding-top: 15px;
@@ -211,7 +212,7 @@
 		background-position: center;
 		transform: scale(1);
 		filter: blur(0);
-		transition: 0.7s steps(30);
+		transition: all 0.4s ease;
 		background-size: cover;
 		@media (max-width: 991px) {
 			height: 200px;
