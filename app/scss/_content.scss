@@ -181,22 +181,47 @@
 
 
 //short-links
+.short-links{
+	.short-links-items{
+		figure{
+			.img{
+				filter: contrast(100%) brightness(100%);
+				transform: scale(1);
+			}
+			.desc-content{
+				width: 100%;
+			}
+			&:hover{
+				.img{
+					//transform: scale(1.1);
+					transform: translateY(-5px) scale(0.97);
+					filter: contrast(105%) brightness(110%);
+				}
+				.desc-content{
+					padding-top: 15px;
+					padding-bottom: 15px;
+				}
+			}
+		}
+	}
+}
 .short-links-items{
 	figure{
 		position: relative;
 		overflow: hidden;
 		.img{
-			filter: contrast(100%) brightness(100%);
+			filter: blur(0);
 			transform: scale(1);
 		}
 		.desc-content{
 			width: 100%;
+			font-size: 0.9em;
+			height: 100%;
 		}
 		&:hover{
 			.img{
-				//transform: scale(1.1);
-				transform: translateY(-5px) scale(0.97);
-				filter: contrast(105%) brightness(110%);
+				transform: scale(1.05);
+				filter: blur(3px);
 			}
 			.desc-content{
 				padding-top: 15px;
@@ -206,13 +231,14 @@
 	}
 	.img-content{
 		overflow: hidden;
+		position: relative;
 	}
 	.img{
 		height: 185px;
 		background-position: center;
 		transform: scale(1);
 		filter: blur(0);
-		transition: all 0.4s ease;
+		transition: 0.5s steps(22);
 		background-size: cover;
 		@media (max-width: 991px) {
 			height: 200px;
@@ -225,6 +251,8 @@
 		padding: 10px 15px;
 		bottom: 0;
 		background-color: rgba(black, 0.5);
+		display: flex;
+    align-items: center;
 		&.bg-color-1{
 			background-color: rgba($color-1, 0.5);
 		}
@@ -449,6 +477,9 @@
 }
 
 .literature-items{
+	.desc-content{
+
+	}
 	figure{
 		.img{
 			height: 185px;

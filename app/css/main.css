@@ -8393,29 +8393,53 @@ textarea.form-control {
     padding-left: 15px;
     padding-right: 15px; }
 
+.short-links .short-links-items figure .img {
+  -webkit-filter: contrast(100%) brightness(100%);
+  filter: contrast(100%) brightness(100%);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.short-links .short-links-items figure .desc-content {
+  width: 100%; }
+
+.short-links .short-links-items figure:hover .img {
+  -webkit-transform: translateY(-5px) scale(0.97);
+  -ms-transform: translateY(-5px) scale(0.97);
+  transform: translateY(-5px) scale(0.97);
+  -webkit-filter: contrast(105%) brightness(110%);
+  filter: contrast(105%) brightness(110%); }
+
+.short-links .short-links-items figure:hover .desc-content {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
 .short-links-items figure {
   position: relative;
   overflow: hidden; }
   .short-links-items figure .img {
-    -webkit-filter: contrast(100%) brightness(100%);
-    filter: contrast(100%) brightness(100%);
+    -webkit-filter: blur(0);
+    filter: blur(0);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); }
   .short-links-items figure .desc-content {
-    width: 100%; }
+    width: 100%;
+    font-size: 0.9em;
+    height: 100%; }
   .short-links-items figure:hover .img {
-    -webkit-transform: translateY(-5px) scale(0.97);
-    -ms-transform: translateY(-5px) scale(0.97);
-    transform: translateY(-5px) scale(0.97);
-    -webkit-filter: contrast(105%) brightness(110%);
-    filter: contrast(105%) brightness(110%); }
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-filter: blur(3px);
+    filter: blur(3px); }
   .short-links-items figure:hover .desc-content {
     padding-top: 15px;
     padding-bottom: 15px; }
 
 .short-links-items .img-content {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .short-links-items .img {
   height: 185px;
@@ -8425,9 +8449,9 @@ textarea.form-control {
   transform: scale(1);
   -webkit-filter: blur(0);
   filter: blur(0);
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: 0.5s steps(22);
+  -o-transition: 0.5s steps(22);
+  transition: 0.5s steps(22);
   -webkit-background-size: cover;
   background-size: cover; }
   @media (max-width: 991px) {
@@ -8442,7 +8466,15 @@ textarea.form-control {
   transition: 0.5s ease-in-out;
   padding: 10px 15px;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .short-links-items .desc-content.bg-color-1 {
     background-color: rgba(86, 151, 227, 0.5); }
   @media (max-width: 991px) {
